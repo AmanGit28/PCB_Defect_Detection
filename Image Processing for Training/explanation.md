@@ -1,36 +1,33 @@
-# Image Processed for Training
+# 🧩 Image Processed for Training
 
-This folder shows how the large original PCB image was processed into smaller, uniformly sized patches before training.
-
----
-
-## 🖼️ Image Format Overview
-
-| Original Image | → | Processed Image |
-|----------------|---|-----------------|
-| ![Original Image](Original_Image.png) | ➡️ | ![Processed Image](processed_image.png) |
+This folder shows how a large original PCB image was processed into smaller, same-sized patches for model training.
 
 ---
 
-### 📌 Description
+## 📸 Image Overview
 
-- **Original Image Size:** 3034 × 1586  
-  The full PCB image prepared manually before preprocessing.
+<div align="center">
 
-- **Processed Images Size:** 1011 × 528  
-  The original image is divided into multiple smaller patches of equal size.  
-  These patches were generated manually, and each patch represents a specific region of the PCB.
+**Original Image (3034 × 1586)**  
+<img src="Original_Image.png" alt="Original PCB Image" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 8px;"/>
 
----
+<br><br>⬇️⬇️⬇️<br><br>
 
-### ⚙️ Purpose of Processing
+**Processed Image (Each patch: 1011 × 528)**  
+<img src="processed_image.png" alt="Processed Patches" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 8px;"/>
 
-Splitting the large PCB image into smaller patches helps in:
-- Maintaining **uniform input sizes** for YOLO training  
-- Allowing the model to **focus on localized defects**  
-- Reducing memory usage and improving **training efficiency**
+</div>
 
 ---
 
-### 📁 Folder Layout
+## 🧠 Explanation
+
+- The **original image** was manually divided into smaller, equal-sized patches for consistent YOLO training input.  
+- Each **processed image patch** is **1011 × 528 pixels** (W × H).  
+- Uniform patch sizes help YOLO learn **localized PCB defects** more efficiently.  
+- This example visually explains the preprocessing workflow used before model training.
+
+---
+
+## 🗂️ Folder Contents
 
